@@ -1,7 +1,7 @@
 
 ---
 
-## Services & Technologies (ATS Keywords)
+## Services & Technologies
 
 - Azure Data Factory  
 - Azure Data Lake Storage Gen2  
@@ -11,6 +11,14 @@
 - Security telemetry  
 - Cloud data pipelines  
 - Compliance & audit readiness  
+
+## Intended Deployment Flow
+
+1. Azure Data Factory pipelines ingest security telemetry into raw storage zones.
+2. Data is organized into curated zones for analytics consumption.
+3. Microsoft Purview registers the data lake and performs automated scans.
+4. Sensitive identity and network fields are classified for governance visibility.
+5. Lineage supports audit and compliance workflows.
 
 ---
 
@@ -81,3 +89,13 @@ See the `screenshots/` directory.
 - Architecture aligns with Microsoft-recommended cloud data patterns
 - Designed to be evaluated by recruiters and hiring managers
 
+
+This project was developed under limited Azure tenant access.
+
+Due to subscription and tenant restrictions, live execution of Azure Data Factory pipelines and Microsoft Purview scans was not available at the time of documentation. The project therefore focuses on:
+
+- Accurate pipeline and governance design
+- Correct service configuration and architecture
+- Data governance and lineage planning aligned with Microsoft best practices
+
+All implementation artifacts are structured to be deployable immediately once tenant access is granted.
